@@ -1,0 +1,9 @@
+<!-- 템플릿 엔진 선언 이걸 하면 타임리프 문법 사용 가능-->
+<!-- 템플릿 엔진을 선언해야 html을 바꿀 수 있다.-->
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<p th:text="'hello ' + ${name}">hello! empty</p>
+<!-- 그냥 파일을 열면 hello! empty 가 나오고 템플릿 엔진이 동작하게 되면 hello! empty가 치환이 된다.
+ ${}는 모델에서 값을 가져오는 걸 뜻한다.-->
+</body>
+</html>
