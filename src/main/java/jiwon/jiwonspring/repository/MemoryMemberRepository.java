@@ -1,9 +1,11 @@
 package jiwon.jiwonspring.repository;
 
 import jiwon.jiwonspring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository // 스프링 컨테이너에 해당 클래스를 등록한다.
 public class MemoryMemberRepository implements MemberRepository { // 옵션 + 엔터
 
     private static Map<Long, Member> store = new HashMap<>();

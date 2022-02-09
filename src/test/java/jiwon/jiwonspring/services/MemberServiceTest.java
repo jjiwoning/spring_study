@@ -1,9 +1,8 @@
-package services;
+package jiwon.jiwonspring.services;
 
 import jiwon.jiwonspring.domain.Member;
 
 import jiwon.jiwonspring.repository.MemoryMemberRepository;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
