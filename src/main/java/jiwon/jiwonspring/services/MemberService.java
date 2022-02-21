@@ -4,6 +4,7 @@ import jiwon.jiwonspring.domain.Member;
 import jiwon.jiwonspring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,6 +13,7 @@ import java.util.Optional;
 // 테스트 클래스 생성 단축키 command shift t
 // 이거를 넣어주면 스프링 컨테이너에 해당 클래스가 등록이 된다.
 //@Service
+@Transactional
 public class MemberService {
     // 회원 서비스에 필요한 것 -> 회원 리포지토리
     // 서비스 클래스의 메서드 이름은 비즈니스에 가까운 이름으로 지어줘야 한다. -> 비즈니스에 의존적으로 설계해야 된다.
