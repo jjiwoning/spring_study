@@ -27,7 +27,7 @@ class MemberServiceIntegrationTest {
     void 회원가입() {
         // given : 이런 상황이 주어졌을 때 -> 이 데이터를 기반으로 하는구나!
         Member member = new Member();
-        member.setName("tomtom");
+        member.setName("tomtom7");
 
         // when : 이걸 실행했을 때 -> 이걸 검증하는구나!
         Long saveId = memberService.join(member);
