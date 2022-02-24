@@ -1,5 +1,6 @@
 package jiwon.jiwonspring;
 
+import jiwon.jiwonspring.aop.TimeTraceAop;
 import jiwon.jiwonspring.repository.*;
 import jiwon.jiwonspring.services.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +40,13 @@ public class SpringConfig {
 
         return new MemberService(memberRepository);
     }
+
+//    @Bean
+//    public TimeTraceAop timeTraceAop(){
+//        return new TimeTraceAop();
+//    }
+
+
     //@Bean
     //public MemberRepository memberRepository(){
         //return new JdbcMemberRepository(dataSource);
